@@ -1,0 +1,17 @@
+#!/usr/bin/python
+maax  = 0
+for i in range(1,100):
+	for j in range(1,100):
+		val = pow(i,j)
+		x = str(val)
+		l = len(x)
+		summ = 0
+		for k in range(l):
+			summ = summ + int(x[k])			
+			
+		if summ > maax :
+			maax = summ
+			a = i
+			b = j
+print a,b,maax
+			
