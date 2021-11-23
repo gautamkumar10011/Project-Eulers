@@ -24,7 +24,6 @@ jobs:
           mv myfile.txt ./test
           ls -la test
         shell: bash
-    steps:
       - name: step checking
         run: |
           pwd
