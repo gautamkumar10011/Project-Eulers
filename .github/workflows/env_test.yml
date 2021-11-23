@@ -30,6 +30,7 @@ jobs:
           git add -A
           git commit -m"Random file"
           echo Above all the steps executed
+#          git push -u origin master
           echo Kya Git Push successful
       - name: Create issue using REST API
         run: |
@@ -38,7 +39,7 @@ jobs:
           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
           --header 'content-type: application/json' \
           --data '{
-            "title": "Automated issue for commit: ${{ github.sha }}",
+            "title": "This is automated issue just for testing ci : ${{ github.sha }}",
             "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
             }' \
           --fail
@@ -94,3 +95,6 @@ jobs:
           echo "RUNNER_OS : ${RUNNER_OS}"
           echo "RUNNER_TEMP : ${RUNNER_TEMP}"
           echo "RUNNER_TOOL_CACHE : ${RUNNER_TOOL_CACHE}"
+          echo =====================================================
+          echo                      JOB END
+          echo =====================================================
