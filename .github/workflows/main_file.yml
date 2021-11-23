@@ -24,6 +24,13 @@ jobs:
           mv myfile.txt ./test
           ls -la test
         shell: bash
+    steps:
+      - name: step checking
+        run: |
+          pwd
+          hostname
+          echo life of pi i super cool
+        shell: bash
   run-windows-commands:
     runs-on: windows-latest
     steps:
