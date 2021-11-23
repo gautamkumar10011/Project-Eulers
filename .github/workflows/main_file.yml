@@ -22,7 +22,7 @@ jobs:
           touch myfile.txt
           mkdir test
           mv myfile.txt ./test
-          ls -la
+          ls -la test
         shell: bash
   run-windows-commands:
     runs-on: windows-latest
