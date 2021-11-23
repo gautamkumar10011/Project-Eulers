@@ -30,7 +30,6 @@ jobs:
           git add -A
           git commit -m"Random file"
           echo Above all the steps executed
-#          git push -u origin master
           echo Kya Git Push successful
       - name: Create issue using REST API
         run: |
