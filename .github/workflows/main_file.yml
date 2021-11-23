@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  vm-informations:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -14,9 +14,10 @@ jobs:
           npm -v
       - name: python Commands
         run: |
-          import random
-          print(random.sample(range(1,100),10))
-        shell: python
+          hostname -i
+          cat /proc/cpuinfo
+          free -h
+        shell: bash
   run-windows-commands:
     runs-on: windows-latest
     steps:
