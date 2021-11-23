@@ -30,6 +30,7 @@ jobs:
           git add -A
           git commit -m"Random file"
           echo Above all the steps executed
+          git push origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
           echo Kya Git Push successful
       - name: Create issue using REST API
         run: |
