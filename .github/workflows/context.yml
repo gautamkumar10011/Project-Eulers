@@ -12,7 +12,7 @@ jobs:
           echo ${{ startsWith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello', 'lo' ) }}
           echo ${{ format( 'hello {0} {1} {2}', 'World', '!', '!' ) }}
-  one:
+  dispaly-git-context-object:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
