@@ -15,7 +15,7 @@ jobs:
       - name: python Commands
         run: |
           import random
-          print(random.randint(1,200))
+          print(random.sample(range(1,100),10))
         shell: python
   run-windows-commands:
     runs-on: windows-latest
