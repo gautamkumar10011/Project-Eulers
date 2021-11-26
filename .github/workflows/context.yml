@@ -11,7 +11,7 @@ jobs:
           echo ${{ contains( 'hello', 'll' ) }}
           echo ${{ startsWith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello', 'lo' ) }}
-          echo ${{ format( 'hello {0} {1} {2}', 'World', '!', '!' ) }}
+          echo ${{ format( 'hello {0} {1} {2}', 'Gautam', 'Kumar', '!!!' ) }}
   dispaly-git-context-object:
     runs-on: ubuntu-latest
     steps:
